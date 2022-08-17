@@ -1,0 +1,337 @@
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+ }
+ .section-gap{
+     height: 100px;
+ }
+ .section-title {
+     text-align: center;
+     font-size: 40px;
+ }
+ .section-title h2{
+    position: relative;
+    display: inline-block;
+    margin-bottom:80px ;
+ }
+ .section-title h2::after {
+     position: absolute;
+     height: 8px;
+     width: 50%;
+     border-radius: 5px;
+     content: "";
+     bottom: -10px;
+     left: 25%;
+     background: red;
+ }
+ .section-title h2::before {
+     position: absolute;
+     height: 6px;
+     width: 20%;
+     border-radius: 5px;
+     content: "";
+     bottom: -9px;
+     z-index: 1;
+     left: 40%;
+     background: white;
+ }
+ 
+ .owl-item > div {
+     cursor: pointer;
+     margin: 6% 8%;
+     transition: margin 0.4s ease;
+   }
+   .owl-item.center > div {
+     cursor: auto;
+     margin: 0;
+   }
+ /*------------------------------ common css end------------------------------ */
+ 
+ 
+ 
+ 
+ /*------------------------------ slider 1 css start------------------------------ */
+
+ .banner-slider {
+    height: 100vh;
+}
+
+.banner-slider .owl-nav {
+    position: absolute;
+    width: 94%;
+    left: 3%;
+    justify-content: space-between;
+    display: flex;
+    top: 50%;
+    font-size: 50px;
+}
+.banner-slider span {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    background: red;
+    line-height: 15px;
+    border-radius: 50%;
+    color: white;
+}
+.banner-slider .owl-item > div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding-top: 100px;
+    position: relative;
+}
+.banner-slider h2 {
+    font-size: 90px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-slider h3 {
+    font-size: 50px;
+    color: #cbc6c6;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+   .img-box{
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    background-color: red;
+    margin: auto;
+    animation-name: shaps;
+    display: flex;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   }
+
+   .right-side-content{
+    position: relative;
+   }
+
+   .trapezium {
+    height: 0;
+    width: 56px;
+    border-bottom: 40px solid red;
+    border-left: 51px solid transparent;
+    border-right: 24px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    animation-name: trapezium;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.pacman {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 20px solid transparent;
+    border-top: 20px solid red;
+    border-left: 20px solid red;
+    border-bottom: 20px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    right: 70px;
+    animation-name: pacman;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .diamond {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 3px 0 0 30px;
+    /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    left: 60px;
+    transform-origin: 0 100%;
+    position: absolute;
+    animation-name: diamond;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+ }
+
+   @keyframes shaps {
+    0%{border-radius: 40% 60% 51% 49% / 55% 46% 54% 45% ;}
+    50%{
+        width: 400px;
+        border-radius: 54% 46% 36% 64% / 54% 30% 70% 46% ;}
+    100%{border-radius: 40% 60% 51% 49% / 55% 46% 54% 45% ;}
+  }
+  @keyframes trapezium{
+    50%{
+        left:51%;
+        top:-90px;
+    }    
+  }
+
+  @keyframes diamond{
+    50%{
+        left: 80px;
+    }
+  }
+
+   @keyframes pacman{
+    50%{
+        right: 80px;
+    }
+  }
+
+ /*------------------------------ slider 1 css end------------------------------ */
+ 
+ 
+ 
+ /*------------------------------ slider 2 css start------------------------------ */
+ .slider-2-container .owl-nav{
+     font-size: 35px;
+   }
+ 
+ .slider-2-container .owl-dot.active span {
+     background: #3cbf91!important;
+ }
+ .slider-2-container img {
+     transition:.2s;
+ }
+ .slider-2-container img:hover {
+     transform: scale(1.1, 1.1);
+     
+ }
+ /*------------------------------ slider 2 css end------------------------------ */
+ 
+ 
+ 
+ /*------------------------------ slider 3 css start------------------------------ */
+ 
+ section.section3 {
+     position: relative;
+ }
+ 
+ #news-slider{
+     margin-top: 80px;
+ }
+ .post-slide{
+     background: #fff;
+     margin: 20px 15px 20px;
+     border-radius: 15px;
+     padding-top: 1px;
+     box-shadow: 0px 14px 22px -9px #bbcbd8;
+ }
+ .post-slide .post-img{
+     position: relative;
+     overflow: hidden;
+     border-radius: 10px;
+     margin: -12px 15px 8px 15px;
+     margin-left: -10px;
+ }
+ .post-slide .post-img img{
+     width: 100%;
+     height: auto;
+     transform: scale(1,1);
+     transition:transform 0.2s linear;
+ }
+ .post-slide:hover .post-img img{
+     transform: scale(1.1,1.1);
+ }
+ .post-slide .over-layer{
+     width:100%;
+     height:100%;
+     position: absolute;
+     top:0;
+     left:0;
+     opacity:0;
+     background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
+     transition:all 0.50s linear;
+ }
+ .post-slide:hover .over-layer{
+     opacity:1;
+     text-decoration:none;
+ }
+ .post-slide .over-layer i{
+     position: relative;
+     top:45%;
+     text-align:center;
+     display: block;
+     color:#fff;
+     font-size:25px;
+ }
+ .post-slide .post-content{
+     background:#fff;
+     padding: 2px 20px 40px;
+     border-radius: 15px;
+ }
+ .post-slide .post-title a{
+     font-size:15px;
+     font-weight:bold;
+     color:#333;
+     display: inline-block;
+     text-transform:uppercase;
+     transition: all 0.3s ease 0s;
+ }
+ .post-slide .post-title a:hover{
+     text-decoration: none;
+     color:#3498db;
+ }
+ .post-slide .post-description{
+     line-height:24px;
+     color:#808080;
+     margin-bottom:25px;
+ }
+ .post-slide .post-date{
+     color:#a9a9a9;
+     font-size: 14px;
+ }
+ .post-slide .post-date i{
+     font-size:20px;
+     margin-right:8px;
+     color: #CFDACE;
+ }
+ .post-slide .read-more{
+     padding: 7px 20px;
+     float: right;
+     font-size: 12px;
+     background: #2196F3;
+     color: #ffffff;
+     box-shadow: 0px 10px 20px -10px #1376c5;
+     border-radius: 25px;
+     text-transform: uppercase;
+ }
+ .post-slide .read-more:hover{
+     background: #3498db;
+     text-decoration:none;
+     color:#fff;
+ }
+ 
+ 
+ .section3 .owl-nav {
+     justify-content: space-between;
+     display: flex;
+     position: absolute;
+     font-size: 50px;
+     width: 96%;
+     left: 3%;
+     top: -90px;
+ }
+ @media only screen and (max-width:1280px) {
+     .post-slide .post-content{
+         padding: 0px 15px 25px 15px;
+     }
+ }
+ 
+ 
+ 
+ /*------------------------------ slider 3 css end------------------------------ */
